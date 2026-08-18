@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET",'POST'])
 def index():
-    return('hi')
+    return(render_template("index.html")) # trying to retrieve the information from the index.html template
 
 # the following won't be run in the cloud (which is the app)
 if __name__ == "__main__":
