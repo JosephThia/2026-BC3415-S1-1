@@ -27,4 +27,4 @@ def DBSresult():
 
 # the following won't be run in the cloud (which is the app)
 if __name__ == "__main__":
-    app.run(port=1234)
+    app.run()
